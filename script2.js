@@ -11,7 +11,7 @@ function kakunin(btnNo){
   }
 
   if (btnNo == 2){
-   pkStatusStore.send({ 'push2!' });
+   pkStatusStore.send({ 'status' : 'push2!' });
   }
 
 
