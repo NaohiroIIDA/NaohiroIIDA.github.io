@@ -1,16 +1,21 @@
+
+var milkcocoa = new MilkCocoa("leadida6ji33.mlkcca.com");
+var pkStatusStore = milkcocoa.dataStore('pk/status');
+
+
 function kakunin(btnNo){
 
+  
   if (btnNo == 1){
-    link = "Yahoo!Japan";
-    href = "http://www.yahoo.co.jp/";
-  }else{
-    link = "Google";
-    href = "http://www.google.co.jp/";
+   pkStatusStore.push({ 'status' : 'push1!' });
   }
 
-  ret = confirm(link + "へ飛びます。宜しいですか？");
-  if (ret == true){
-    location.href = href;
+  if (btnNo == 2){
+   pkStatusStore.push({ 'status' : 'push2!' });
   }
+
+
+
+  
   
 }
