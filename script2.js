@@ -1,6 +1,6 @@
 
-var milkcocoa = new MilkCocoa("leadida6ji33.mlkcca.com");
-var pkStatusStore = milkcocoa.dataStore('test');
+var milkcocoa = new MilkCocoa("blueifne577j.mlkcca.com");
+var pkStatusStore = milkcocoa.dataStore('PK');
 
 
 function kakunin(btnNo){
