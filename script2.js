@@ -11,14 +11,14 @@ function kakunin(btnNo){
   }
 
   if (btnNo == 2){
-   pkStatusStore.send({ 'cmd' : 's/!' });
+   pkStatusStore.send({ 'cmd' : 's/' });
   }
 
   if (btnNo == 3){
-   pkStatusStore.send({ 'cmd' : 'q/!' });
+   pkStatusStore.send({ 'cmd' : 'q/' });
   }
    if (btnNo == 4){
-   pkStatusStore.send({ 'cmd' : 'P180/!' });
+   pkStatusStore.send({ 'cmd' : 'P180/' });
   }
 
 
