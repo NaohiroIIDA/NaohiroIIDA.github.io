@@ -3,7 +3,7 @@ var milkcocoa = new MilkCocoa("blueifne577j.mlkcca.com");
 var pkStatusStore = milkcocoa.dataStore('PK');
 
 
-function kakunin(btnNo){
+function command_send1(btnNo){
 
   
   if (btnNo == 1){
@@ -19,10 +19,25 @@ function kakunin(btnNo){
   }
    if (btnNo == 4){
    pkStatusStore.send({ 'cmd' : 'P180/' });
-  }
-
-
-
+  }  
   
+}
+
+function command_send_pos(pos){
+
+	var send_str  = "P" +  pos + "/";
+  
+   pkStatusStore.send({ 'cmd' : send_str });
+  
+}
+
+
+function command_send_speed(spd){
+
+	spd +=12;
+
+	var send_str  = "S" +  spd + "/";
+  
+   pkStatusStore.send({ 'cmd' : send_str });
   
 }

@@ -19,3 +19,14 @@ ds.on('send',function(cmd){
   console.log(cmd.value.cmd);
   sp.write(cmd.value.cmd);
 });
+
+sp.open(function (error) {
+  if (error) {
+    console.log('Failed to open: '+error);
+  } else {
+    console.log('open');
+    sp.on('data', function(data) {
+      console.log('data received: ' + data);
+    });
+  }
+});
