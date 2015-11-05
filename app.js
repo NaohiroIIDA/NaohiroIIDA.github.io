@@ -1,6 +1,7 @@
 // app.js
 var MilkCocoa = require('milkcocoa');
-var milkcocoa = new MilkCocoa("blueifne577j.mlkcca.com");
+//var milkcocoa = new MilkCocoa("blueifne577j.mlkcca.com");
+var milkcocoa = new MilkCocoa('juiceiglrg763.mlkcca.com');
 var ds = milkcocoa.dataStore("PK");
 
 var SerialPort = require("serialport").SerialPort;

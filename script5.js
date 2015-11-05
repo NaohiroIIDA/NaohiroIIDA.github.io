@@ -4,7 +4,7 @@
 //var milkcocoa = new MilkCocoa("vueifrvtyb7.mlkcca.com");
 var milkcocoa = new MilkCocoa('juiceiglrg763.mlkcca.com');
 
-var pkStatusStore = milkcocoa.dataStore('PK5');
+var pkStatusStore = milkcocoa.dataStore('PK');
 
 
 function command_send1(btnNo){
