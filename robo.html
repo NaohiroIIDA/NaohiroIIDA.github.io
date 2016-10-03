@@ -1,34 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
- "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-<meta http-equiv="Content-Script-Type" content="text/javascript">
+<html>
+
+ <head>
+  <title>robot Tester</title>
+ </head>
+
+<a href="http://172.20.10.12:1337/?movie_set=Wedding_01.mp4">Wedding_01</a>
+<a href="http://172.20.10.12:1337/?movie_set=Wedding_02.mp4">Wedding_02</a>
+<BR>
+<BR>
+<a href="http://172.20.10.12:1337/?movie_play">movie_play</a>
+<BR>
+<a href="http://172.20.10.12:1337/?movie_stop">movie_stop</a>
+
+<BR>
+<a href="http://172.20.10.12:1337/?ROBO=G90G01X100Y100F3000">100/100</a><BR>
+<a href="http://172.20.10.12:1337/?ROBO=G90G01X-100Y-100F3000">-100/-100</a><BR>
+
+<a href="http://172.20.10.12:1337/?ROBO=G90G01X-100Y100F3000">-100/-100</a><BR>
+
+<a href="http://172.20.10.12:1337/?ROBO=G90G01X100Y-100F3000">-100/-100</a><BR>
 
 
-<script src="https://cdn.mlkcca.com/v2.0.0/milkcocoa.js"></script>
-<script type="text/javascript" src="./robo.js"></script>
+<a href="http://172.20.10.12:1337/?ROBO=G90G01X0Y0F3000">0/0</a><BR>
 
-<title>ロボ テスト</title>
-</head>
-<body>
-
-interface
-<p>
-<input type="checkbox" name="number" value="1">No.1
-<input type="checkbox" name="number" value="2">No.2
-<input type="checkbox" name="number" value="3">No.3
-<input type="checkbox" name="number" value="3">No.4
-<input type="checkbox" name="number" value="3">No.5
-</p>
-<p>
-<form name="test">
-<input type="button" name="rec" value="記録" onmousedown ="robo_cmd(1)" onmouseup="robo_cmd(0)">
-<input type="button" name="recstop" value="記録停止" onmousedown ="robo_cmd(2)"onmouseup="robo_cmd(0)">
-<input type="button" name="play" value="再生" onmousedown ="robo_cmd(3)"onmouseup="robo_cmd(0)">
-<input type="button" name="stop" value="停止" onmousedown ="robo_cmd(4)"onmouseup="robo_cmd(0)">
-</p>
-<hr>
-
-</body>
 </html>
