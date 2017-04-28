@@ -1,6 +1,6 @@
 
 var milkcocoa = new MilkCocoa('applej226hj6o.mlkcca.com');
-var StatusStore = milkcocoa.dataStore('esp8266');
+var StatusStore = milkcocoa.dataStore('junction');
 
 
 function command_send(btnNo){
