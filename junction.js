@@ -1,24 +1,27 @@
 
 
 var milkcocoa = new MilkCocoa('applej226hj6o.mlkcca.com');
-var sampleDataStore = milkcocoa.dataStore("junction");
+var StatusStore = milkcocoa.dataStore('junction');
 
-function command_send(btnNo){
+function command_send1(btnNo){
 
   
   if (btnNo == 1){
-   StatusStore.send({ 'cmd' : 'R/' });
+   StatusStore.send({ v : 1});
   }
 
   if (btnNo == 2){
-   StatusStore.send({ 'cmd' : 's/' });
+   
+   StatusStore.send({ v : 2});
   }
 
   if (btnNo == 3){
-   StatusStore.send({ 'cmd' : 'q/' });
+   
+   StatusStore.send({ v : 3});
   }
    if (btnNo == 4){
-   StatusStore.send({ 'cmd' : 'P180/' });
+   
+   StatusStore.send({ v : 4});
   }  
   
 }
